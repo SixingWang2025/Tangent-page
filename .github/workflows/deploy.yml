@@ -1,0 +1,27 @@
+name: Deploy to gh-pages
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          publish_branch: gh-pages
+          exclude_assets: ".github/**,.gitignore,.gitattributes,README.md"
+
+      - name: Trigger main site deploy
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.MAIN_REPO_PAT }}
+          repository: SixingWang2025/SixingWang2025.github.io
+          event-type: trigger-deploy
