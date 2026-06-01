@@ -105,13 +105,12 @@ strike {
     border-radius: 0;
     margin: 5px 0;
     width: 100%;
-    padding: 12px 40px;
+    padding: 12px 20px;
     transition: ease;
 }
 
 .btn-primary {
-    /* box-shadow: 0px 5px 15px 5px rgb(203, 221, 232); */
-    padding: 12px 40px;
+    padding: 12px 20px;
     transition: ease;
 }
 
@@ -120,8 +119,7 @@ strike {
 }
 
 .btn-secondary {
-    /* box-shadow: 0px 5px 15px 5px rgb(203, 221, 232); */
-    padding: 12px 40px;
+    padding: 12px 20px;
     transition: ease;
 }
 
@@ -130,12 +128,20 @@ strike {
 }
 
 .btn-success {
-    /* box-shadow: 0px 5px 15px 5px rgb(203, 221, 232); */
-    padding: 12px 40px;
+    padding: 12px 20px;
     transition: ease;
 }
 
 .btn-success:hover {
+    box-shadow: 5px -2px 15px 0px rgb(203, 221, 232);
+}
+
+.btn-info {
+    padding: 12px 20px;
+    transition: ease;
+}
+
+.btn-info:hover {
     box-shadow: 5px -2px 15px 0px rgb(203, 221, 232);
 }
 
@@ -162,8 +168,6 @@ strike {
 }
 
 .photo-bg {
-    /* background-image: url(assets/background.jpg); */
-    background-image: url(https://tva1.sinaimg.cn/large/0072Vf1pgy1foxk456b0fj31hc0u0dxu.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
