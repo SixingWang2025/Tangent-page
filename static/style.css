@@ -84,7 +84,7 @@ h4 {
 .card {
     border: none;
     padding: 50px 30px 0px;
-    border-radius: 0;
+    border-radius: 8px;
 }
 
 .container {
